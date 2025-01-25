@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的詩歌集</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      background-color: lightyellow;
+      color: black;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: maroon;
+    }
+
+    header p {
+      color: maroon;
+    }
+
+    main {
+      padding: 20px;
+      min-height: calc(100vh - 120px);
+      flex-grow: 1;
+      display: flex; /* 使用 flexbox 排版 */
+      flex-wrap: wrap; /* 允許換行 */
+    }
+
+    .page {
+      display: none;
+      width: 100%; /* 預設佔滿整個寬度 */
+    }
+
+    .page ol {
+        columns: 2; /* 設定兩欄顯示 */
+        column-gap: 20px; /* 設定欄間距 */
+    }
+
+    /*  移除媒體查詢，強制兩欄顯示 */
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="cover.jpg" alt="封面圖片">
+    <h1>主耶穌的家~詩選集</h1>
+    <p>這是我製作的一些樂譜，希望你喜歡。</p>
+    <p>製作於2023年。供練習和讚美用。</p>
+  </header>
+
+  <main>
+
+    <div id="page1" class="page">
+      <ol start="1">
+        <li><a href="poem1.html">詩歌1. 祢信實何廣大</a></li>
+        <li><a href="poem2.html">詩歌2的標題</a></li>
+        <li><a href="poem3.html">詩歌3的標題</a></li>
+        <li><a href="poem4.html">詩歌4的標題</a></li>
+        <li><a href="poem5.html">詩歌5的標題</a></li>
+        <li><a href="poem6.html">詩歌6的標題</a></li>
+        <li><a href="poem7.html">詩歌7的標題</a></li>
+        <li><a href="poem8.html">詩歌8的標題</a></li>
+        <li><a href="poem9.html">詩歌9的標題</a></li>
+        <li><a href="poem10.html">詩歌10的標題</a></li>
+        <li><a href="poem11.html">詩歌11的標題</a></li>
+        <li><a href="poem12.html">詩歌12的標題</a></li>
+        <li><a href="poem13.html">詩歌13的標題</a></li>
+        <li><a href="poem14.html">詩歌14的標題</a></li>
+        <li><a href="poem15.html">詩歌15的標題</a></li>
+        <li><a href="poem16.html">詩歌16的標題</a></li>
+        <li><a href="poem17.html">詩歌17的標題</a></li>
+        <li><a href="poem18.html">詩歌18的標題</a></li>
+        <li><a href="poem19.html">詩歌19的標題</a></li>
+        <li><a href="poem20.html">詩歌20的標題</a></li>
+      </ol>
+      <button onclick="showPage('page2')">下一頁</button>
+    </div>
+
+    <div id="page2" class="page">
+      <ol start="21">
+        <li><a href="poem21.html">詩歌21的標題</a></li>
+        <li><a href="poem22.html">詩歌22的標題</a></li>
+        <li><a href="poem23.html">詩歌23的標題</a></li>
+        <li><a href="poem24.html">詩歌24的標題</a></li>
+        <li><a href="poem25.html">詩歌25的標題</a></li>
+        <li><a href="poem26.html">詩歌26的標題</a></li>
+        <li><a href="poem27.html">詩歌27的標題</a></li>
+        <li><a href="poem28.html">詩歌28的標題</a></li>
+        <li><a href="poem29.html">詩歌29的標題</a></li>
+        <li><a href="poem30.html">詩歌30的標題</a></li>
+        <li><a href="poem31.html">詩歌31的標題</a></li>
+        <li><a href="poem32.html">詩歌32的標題</a></li>
+        <li><a href="poem33.html">詩歌33的標題</a></li>
+        <li><a href="poem34.html">詩歌34的標題</a></li>
+        <li><a href="poem35.html">詩歌35的標題</a></li>
+        <li><a href="poem36.html">詩歌36的標題</a></li>
+        <li><a href="poem37.html">詩歌37的標題</a></li>
+        <li><a href="poem38.html">詩歌38的標題</a></li>
+        <li><a href="poem39.html">詩歌39的標題</a></li>
+        <li><a href="poem40.html">詩歌40的標題</a></li>
+      </ol>
+      <button onclick="showPage('page1')">上一頁</button>
+      <button onclick="showPage('page3')">下一頁</button>
+    </div>
+
+    <div id="page3" class="page">
+      <ol start="41">
+        <li><a href="poem41.html">詩歌41的標題</a></li>
+        <li><a href="poem42.html">詩歌42的標題</a></li>
+        <li><a href="poem43.html">詩歌43的標題</a></li>
+        <li><a href="poem44.html">詩歌44的標題</a></li>
+        <li><a href="poem45.html">詩歌45的標題</a></li>
+        <li><a href="poem46.html">詩歌46的標題</a></li>
+        <li><a href="poem47.html">詩歌47的標題</a></li>
+        <li><a href="poem48.html">詩歌48的標題</a></li>
+        <li><a href="poem49.html">詩歌49的標題</a></li>
+        <li><a href="poem50.html">詩歌50的標題</a></li>
+        <li><a href="poem51.html">詩歌51的標題</a></li>
+        <li><a href="poem52.html">詩歌52的標題</a></li>
+        <li><a href="poem53.html">詩歌53的標題</a></li>
+        <li><a href="poem54.html">詩歌54的標題</a></li>
+        <li><a href="poem55.html">詩歌55的標題</a></li>
+        <li><a href="poem56.html">詩歌56的標題</a></li>
+        <li><a href="poem57.html">詩歌57的標題</a></li>
+        <li><a href="poem58.html">詩歌58的標題</a></li>
+        <li><a href="poem59.html">詩歌59的標題</a></li>
+        <li><a href="poem60.html">詩歌60的標題</a></li>
+      </ol>
+      <button onclick="showPage('page2')">上一頁</button>
+      <button onclick="showPage('page4')">下一頁</button>
+    </div>
+
+    <div id="page4" class="page">
+      <ol start="61">
+        <li><a href="poem61.html">詩歌61的標題</a></li>
+        <li><a href="poem62.html">詩歌62的標題</a></li>
+        <li><a href="poem63.html">詩歌63的標題</a></li>
+        <li><a href="poem64.html">詩歌64的標題</a></li>
+        <li><a href="poem65.html">詩歌65的標題</a></li>
+        <li><a href="poem66.html">詩歌66的標題</a></li>
+        <li><a href="poem67.html">詩歌67的標題</a></li>
+        <li><a href="poem68.html">詩歌68的標題</a></li>
+        <li><a href="poem69.html">詩歌69的標題</a></li>
+        <li><a href="poem70.html">詩歌70的標題</a></li>
+        <li><a href="poem71.html">詩歌71的標題</a></li>
+        <li><a href="poem72.html">詩歌72的標題</a></li>
+        <li><a href="poem73.html">詩歌73的標題</a></li>
+        <li><a href="poem74.html">詩歌74的標題</a></li>
+        <li><a href="poem75.html">詩歌75的標題</a></li>
+        <li><a href="poem76.html">詩歌76的標題</a></li>
+        <li><a href="poem77.html">詩歌77的標題</a></li>
+        <li><a href="poem78.html">詩歌78的標題</a></li>
+        <li><a href="poem79.html">詩歌79的標題</a></li>
+        <li><a href="poem80.html">詩歌80的標題</a></li>
+      </ol>
+      <button onclick="showPage('page3')">上一頁</button>
+      <button onclick="showPage('page5')">下一頁</button>
+    </div>
+
+    <div id="page5" class="page">
+      <ol start="81">
+        <li><a href="poem81.html">詩歌81的標題</a></li>
+        <li><a href="poem82.html">詩歌82的標題</a></li>
+        <li><a href="poem83.html">詩歌83的標題</a></li>
+        <li><a href="poem84.html">詩歌84的標題</a></li>
+        <li><a href="poem85.html">詩歌85的標題</a></li>
+        <li><a href="poem86.html">詩歌86的標題</a></li>
+        <li><a href="poem87.html">詩歌87的標題</a></li>
+        <li><a href="poem88.html">詩歌88的標題</a></li>
+        <li><a href="poem89.html">詩歌89的標題</a></li>
+        <li><a href="poem90.html">詩歌90的標題</a></li>
+        <li><a href="poem91.html">詩歌91的標題</a></li>
+        <li><a href="poem92.html">詩歌92的標題</a></li>
+        <li><a href="poem93.html">詩歌93的標題</a></li>
+        <li><a href="poem94.html">詩歌94的標題</a></li>
+        <li><a href="poem95.html">詩歌95的標題</a></li>
+        <li><a href="poem96.html">詩歌96的標題</a></li>
+        <li><a href="poem97.html">詩歌97的標題</a></li>
+        <li><a href="poem98.html">詩歌98的標題</a></li>
+        <li><a href="poem99.html">詩歌99的標題</a></li>
+        <li><a href="poem100.html">詩歌100的標題</a></li>
+      </ol>
+      <button onclick="showPage('page4')">上一頁</button>
+    </div>
+  </main>
+
+  <script>
+    function showPage(pageId) {
+      // 隱藏所有頁面
+      let pages = document.querySelectorAll('.page');
+      pages.forEach(page => {
+        page.style.display = 'none';
+      });
+
+      // 顯示指定的頁面
+      document.getElementById(pageId).style.display = 'block';
+    }
+
+    // 顯示第一頁
+    showPage('page1');
+  </script>
+
+</body>
+</html>
